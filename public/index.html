@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Pokemon Shop</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<!-- seg tag here -->
+
+	<script>
+	  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="mkTTmBT3wXX0jK7vfBoPrxZhGEzHZKd3";analytics.SNIPPET_VERSION="4.13.2";
+	  analytics.load("xxx");
+	  analytics.page();
+	  }}();
+	</script>
+
+
+	<!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+	
+	<!-- Don't use this in production (oopsies): -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row" id="nav">
+ 			<div class="col-3">
+	          <!-- This content will take up 3/12 (or 1/4) of the container -->
+	        </div>
+	        <div class="col-6">
+	          <img src="/images/logo.png" />
+	        </div>
+	        <div class="col-3" id="cart">
+	          <!-- This content will take up 6/12 (or 1/2) of the container -->
+	          
+	        </div>
+		</div>
+		<div class="row">
+	        <div class="col-3">
+	          <!-- This content will take up 3/12 (or 1/4) of the container -->
+	        </div>
+	        <div class="col-6" id="pokemon">
+	          <!-- This content will take up 3/12 (or 1/4) of the container -->
+	        </div>
+	        <div class="col-3">
+	          <!-- This content will take up 6/12 (or 1/2) of the container -->
+	        </div>
+		</div>
+		</div>
+	<!-- Load our React components. -->
+	<script type="text/babel" src="js/pokemon.js"></script>
+</body>
+</html>
